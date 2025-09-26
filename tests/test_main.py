@@ -10,7 +10,7 @@ def test_deck_has_52_cards():
     assert len(deck.cards) == 52
 
 def test_deck_contains_all_colors():
-    deck = Deck()
+    deck = Deck()   
     colors = {card.color for card in deck.cards}
     assert colors == set(Card.Color)
 
