@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class Card:
     class Color(Enum):
         HEART = 0
@@ -13,12 +14,10 @@ class Card:
 
     def __str__(self):
         return f"{ self.number } of { self.color }"
-    
 
-
-                    
     def __repr__(self):
         return str(self)
+
 
 class Deck:
     def __init__(self):
@@ -27,6 +26,7 @@ class Deck:
             for j in range(13):
                 self.cards.append(Card(Card.Color(i), j + 1))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     deck = Deck()
     print(deck.cards)
