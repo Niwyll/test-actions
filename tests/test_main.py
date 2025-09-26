@@ -1,4 +1,3 @@
-import pytest
 from deck import Card, Deck  # remplace `your_module` par le nom de ton fichier (sans .py)
 
 def test_card_str_and_repr():
